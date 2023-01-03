@@ -15,7 +15,7 @@
     }</script>
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Pizzeria da Ericchi";
 }
 
 <navbar>
@@ -34,7 +34,7 @@
 <div class="relative overflow-hidden bg-no-repeat bg-cover"
      style="
         background-position: 50%;
-        background-image: url('img/pizzabg.jpg');
+        background-image: url('img/pizzabg.webp');
         height: 500px;
       ">
     <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -51,9 +51,114 @@
         </div>
     </div>
 </div>
-<div class="text-center bg-gray-50 text-gray-800 py-20 px-6">
-    <h1 class="text-5xl font-bold mt-0 mb-6">Le nostre pizze</h1>
-    
+<div class="text-center bg-gray-50 text-gray-800 py-10 px-6">
+    <!-- Container for demo purpose -->
+    <div class="container my-12 px-6 mx-auto">
+
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-gray-800 text-center">
+
+            <h2 class="text-3xl font-bold mb-12 pb-4 text-center">Le nostre pizze</h2>
+
+            <div class="grid lg:grid-cols-3 gap-6 xl:gap-x-12">
+                <div class="mb-6 lg:mb-0">
+                    <div class="relative block bg-white rounded-lg shadow-lg">
+                        <div class="flex">
+                            <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+                                 data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                <img src="~/img/margherita.webp" class="w-full" />
+                                <a href="#!">
+                                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                                         style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="font-bold text-lg mb-3">Margherita</h5>
+                            <p class="text-gray-500 mb-4">
+                            </p>
+                            <p class="mb-4 pb-2">
+                                La classica. Pomodoro e mozzarella in un tripudio di sapore.
+                            </p>
+                            <p class="font-bold text-lg mb-3">5.00€</p>
+                            <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light"
+                               class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                                Aggiungi al carrello
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6 lg:mb-0">
+                    <div class="relative block bg-white rounded-lg shadow-lg">
+                        <div class="flex">
+                            <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+                                 data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                <img src="~/img/marinara.webp" class="w-full" />
+                                <a href="#!">
+                                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                                         style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="font-bold text-lg mb-3">Marinara</h5>
+                            <p class="text-gray-500 mb-4">
+                            </p>
+                            <p class="mb-4 pb-2">
+                                Olio, aglio e origano. Niente di più genuino e mediterraneo.
+                            </p>
+                            <p class="font-bold text-lg mb-3">4.50€</p>
+                            <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light"
+                               class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                                Aggiungi al carrello
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6 lg:mb-0">
+                    <div class="relative block bg-white rounded-lg shadow-lg">
+                        <div class="flex">
+                            <div class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+                                 data-mdb-ripple="true" data-mdb-ripple-color="light">
+                                <img src="~/img/quattrostagioni.webp" class="w-full" />
+                                <a href="#!">
+                                    <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                                         style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="font-bold text-lg mb-3">Quattro Stagioni</h5>
+                            <p class="text-gray-500 mb-4">
+                            </p>
+                            <p class="mb-4 pb-2">
+                                Quattro come gli elementi della terra. Una pizza che rappresenta l'essenza stessa dell'esistenza.
+                            </p>
+                            <p class="font-bold text-lg mb-3">7.00€</p>
+                            <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light"
+                               class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                                Aggiungi al carrello
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="text-3xl font-bold my-12 pb-4 text-center">Video promozionale</h2>
+
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fSVFZGj0k_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</section>
+        <!-- Section: Design Block -->
+
+    </div>
+    <!-- Container for demo purpose -->
+
 
 </div>
 
