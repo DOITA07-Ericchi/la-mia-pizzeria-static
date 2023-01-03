@@ -1,28 +1,36 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.Extensions.DependencyInjection;
+
+var builder = WebApplication.CreateBuilder (args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews ();
 
-var app = builder.Build();
+var mvcBuilder = builder.Services.AddRazorPages();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (builder.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    mvcBuilder.AddRazorRuntimeCompilation();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+var app = builder.Build ();
 
-app.UseRouting();
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment ()) {
+	app.UseExceptionHandler ("/Home/Error");
+	// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+	app.UseHsts ();
+}
 
-app.UseAuthorization();
+app.UseHttpsRedirection ();
+app.UseStaticFiles ();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseRouting ();
 
-app.Run();
+app.UseAuthorization ();
+
+app.MapControllerRoute (
+	name: "default",
+	pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run ();
 
